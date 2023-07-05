@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.App {
+  text-align: center;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  width:100%;
+  background-color: rgb(26,26,26);
+  font-family: 'Roboto', sans-serif;
+}
+.footer{
+  width:100%;
+  text-align: center;
+  color:white;
+  padding: 10px;
+  position: sticky;
+  bottom: 0;
+}
+.hero-section{
+  width:100%;
+  height:600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-image: url('../src/Images/herosection.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card{
+  width:300px;
+  height:400px;
+}
+.card img{
+  width:200px;
+  height:150px;
+  object-fit:contain;
+  padding: 10px;
+}
+input[type="search"]::placeholder{
+    color:rgba(17, 17, 17, 0.415);
+}
+.cartpage{
+  width:100%;
+  min-height:80vh;
+  background-color:whitesmoke;
+  border-radius: 50px;
+}
+.cartimg{
+  width:50px;
+  height:50px;
+}
+.count{
+  background-color:black;
+  color:white;
+  width:30px;
+  height:30px;
+  padding: 5px;
+  border-radius: 25px;
+  margin: 0px 10px;
+}
+.singleproduct{
+  width:100%;
+  height:80vh;
+  padding: 10px 0px;
+}
+.singleproduct img{
+  width:250px;
+  height:auto;
+  text-align: center;
+}
+table td{
+  cursor:pointer
+}
+
+
+@media (min-width:340px) and (max-width:1200px){
+  .hero-section{
+  width:100%;
+  height:600px;
+  background-size: contain;
+  }
+  .singleproduct img{
+    width:250px;
+    height:150px;
+    text-align: center;
+  }
+}
