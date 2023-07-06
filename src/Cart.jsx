@@ -12,7 +12,7 @@ const Cart = () => {
 
   const dispatch = useDispatch();
    
-  const [price,setPrice] = useState([0])
+  const [price,setPrice] = useState("")
   const [tax,setTax] = useState(0)
   
 
