@@ -65,6 +65,10 @@ export const productSlice = createSlice({
             console.log(state.cartItems)
            },
            removeItem:(state,action)=>{
+            if(action.payload.count === 0){
+              state.cartItems = state.cartItems.filter((val)=>val.id !== action.payload.id)
+              console.log(state.cartItems)
+            }
             state.cartItems = state.cartItems.filter((val)=>val.id !== action.payload.id)
             console.log(state.cartItems)
            },
